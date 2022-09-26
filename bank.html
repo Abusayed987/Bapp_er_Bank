@@ -19,7 +19,7 @@
         <div class="grid gap-4 grid-cols-3">
             <div class="bg-green-500 p-8 text-white rounded-lg drop-shadow-md	">
                 <h4 class="text-2xl">Deposit</h4>
-                <h2 class="text-5xl">$00</h2>
+                <h2 class="text-5xl">$<span id="deposit_total">00</span></h2>
             </div>
             <div class="bg-yellow-500 p-8 text-white rounded-lg	drop-shadow-md">
                 <h4 class="text-2xl">Withdraw</h4>
@@ -27,7 +27,7 @@
             </div>
             <div class="bg-blue-500 p-8 text-white rounded-lg	drop-shadow-md">
                 <h4 class="text-2xl">Blance</h4>
-                <h2 class="text-5xl">$2500</h2>
+                <h2 class="text-5xl">$<span id="blance_total">2500</span></h2>
             </div>
         </div>
     </section>
@@ -36,7 +36,7 @@
         <div class="grid gap-4 grid-cols-2 w-9/12	mx-auto">
             <div class="bg-green-500 p-8 rounded-lg drop-shadow-md">
                 <h4 class="text-2xl mb-3  text-white">Please Deposit</h4>
-                <input class="block mb-3 w-9/12 p-2 rounded text-green-700" type="text" name="" id="deposit_box"
+                <input id="deposit_box" class="block mb-3 w-9/12 p-2 rounded text-green-700" type="text" name=""
                     placeholder="$ Amount you want to Deposit">
                 <button id="deposit_btn"
                     class="bg-sky-700 text-white px-8 py-2 rounded hover:bg-amber-700">Deposit</button>
@@ -51,6 +51,7 @@
         </div>
     </section>
     </main>
+    <script src="js/bank.js"></script>
 </body>
 
 </html>
