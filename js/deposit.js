@@ -6,7 +6,11 @@ document.getElementById('deposit_btn').addEventListener('click', function () {
     const newDepositAmmountString = depositFuild.value;
     // step:04 depositFuild string from number
     const newDepositAmmountNumber = parseFloat(newDepositAmmountString);
-
+    depositFuild.value = '';
+    if (isNaN(newDepositAmmountNumber)) {
+        alert('Please provide a valid Number ');
+        return;
+    }
     // step:05 connect with input fuild 
     const depositTotalAmmount = document.getElementById('deposit_total');
     // step :06 set element from tag (.innerText)
@@ -33,5 +37,4 @@ document.getElementById('deposit_btn').addEventListener('click', function () {
     // totalBlance.innerText = totalCurrentBlance;
 
 
-    depositFuild.value = '';
 })
